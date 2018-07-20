@@ -14,4 +14,8 @@ router.get('/tours', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
     res.render('contact', { title: 'Контакти' });
 });
+router.post('/contact', function(req, res, next) {
+    console.log('Отримано повідомлення ' + req.body.email);
+    res.render('contact-success', { title: 'Контакти' });
+});
 module.exports = router;
