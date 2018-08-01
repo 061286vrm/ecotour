@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+p
+{
+  height: 80px
+  
+}
+p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
