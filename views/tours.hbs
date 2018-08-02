@@ -1,67 +1,9 @@
-<h1> Тури</h1>
-
-<body>
-    <div class="container">
-        <table>
-          <thead>
-            <tr>
-                <th>Країни</th>
-                <th>Дата відправки</th>
-                <th>Вартість</th>
-            </tr>
-        </thead>
-                <tbody>
-            <tr>
-                <td>Єгипит</td>
-                <td>21.07.2018</td>
-                <td>300$</td>
-            </tr>
-              <tr>
-                <td>Франція</td>
-                <td>30.07.2018</td>
-                <td>500$</td>
-            </tr>
-              <tr>
-                <td>Іспанія</td>
-                <td>30.08.2018</td>
-                <td>600$</td>
-            </tr>
-            <tr>
-                <td>Кенія</td>
-                <td>04.08.2018</td>
-                <td>1200$</td>
-            </tr>
-            <tr>
-                <td>Австрія</td>
-                <td>08.08.2018</td>
-                <td>900$</td>
-            </tr>
-            <tr>
-                <td>CША</td>
-                <td>01.08.2018</td>
-                <td>1300$</td>
-            </tr>
-            <tr>
-                <td>Канада</td>
-                <td>20.07.2018</td>
-                <td>600$</td>
-            </tr>
-            <tr>
-                <td>Китай</td>
-                <td>21.07.2018</td>
-                <td>1050$</td>
-            </tr>
-            <tr>
-                <td>Хорватія</td>
-                <td>25.07.2018</td>
-                <td>400$</td>
-            </tr>
-            <tr>
-                <td>Італія</td>
-                <td>09.09.2018</td>
-                <td>600$</td>
-            </tr>
-        </tbody>
-        </table>
-      
-</div> 
+<table>
+{{#each tours_list}}
+    <tr>
+        <td>{{this.tours_country}}</td>
+        <td>{{this.tours_data}}</td>
+        <td>{{this.tours_price}}</td>
+    </tr>
+{{/each}}
+</table>

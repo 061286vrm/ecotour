@@ -36,7 +36,65 @@ router.get('/countries', function (req, res, next) {
     res.render('countries', { title: 'Країни', countries_list: countries_list });
 });
 router.get('/tours', function (req, res, next) {
-    res.render('tours', { title: 'Тури' });
+    var tours_list=[
+        {
+            tours_country: "Країни",
+            tours_data: "Дата відправки",
+            tours_price:"Вартість",
+        },
+        {
+            tours_country: "Єгипит",
+            tours_data: "21.07.2018",
+            tours_price:"300$",
+        },
+        {
+            tours_country: "Франція",
+            tours_data: "30.07.2018",
+            tours_price:"500$",
+        },
+        {
+            tours_country: "Іспанія",
+            tours_data: "30.08.2018",
+            tours_price:"600$",
+        },
+        {
+            tours_country: "Кенія",
+            tours_data: "04.08.2018",
+            tours_price:"1200$",
+        },
+        {
+            tours_country: "Австрія",
+            tours_data: "08.08.2018",
+            tours_price:"900$",
+        },
+        {
+            tours_country: "CША",
+            tours_data: "01.08.2018",
+            tours_price:"1300$",
+        },
+        {
+            tours_country: "Канада",
+            tours_data: "20.07.2018",
+            tours_price:"600$",
+        },
+        {
+            tours_country: "Китай",
+            tours_data: "21.07.2018",
+            tours_price:"1050$",
+        },
+        {
+            tours_country: "Хорватія",
+            tours_data: "25.07.2018",
+            tours_price:"400$",
+        },
+        {
+            tours_country: "Італія",
+            tours_data: "09.09.2018",
+            tours_price:"600$",
+        }
+        
+    ]
+    res.render('tours', { title: 'Тури', tours_list:tours_list });
 });
 router.get('/contact', function (req, res, next) {
     res.render('contact', { title: 'Контакти' });

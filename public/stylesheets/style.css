@@ -1,6 +1,5 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -16,3 +15,17 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
+.flag_county
+{
+  opacity: 0.5;
+  background-color:blueviolet;
+}
+.news
+{
+  width:90%; 
+  height:190px;
+  border: 1px groove maroon;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: clip;
+  }
