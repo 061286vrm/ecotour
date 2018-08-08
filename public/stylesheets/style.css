@@ -1,31 +1,35 @@
 body {
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
-p
-{
-  height: 80px
-  
-}
+  color: #00B7FF; }
+
+p {
+  height: 80px; }
+
 p {
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-}
-.flag_county
-{
+  overflow: hidden; }
+
+.flag_county {
   opacity: 0.5;
-  background-color:blueviolet;
-}
-.news
-{
-  width:90%; 
-  height:190px;
+  background-color: blueviolet; }
+
+.news {
+  height: 190px;
   border: 1px groove maroon;
   word-wrap: normal;
   overflow: hidden;
-  text-overflow: clip;
-  }
+  text-overflow: clip; }
+
+aside {
+  float: right;
+  width: 40%; }
+
+main {
+  float: left;
+  width: 60%; }
+
+footer {
+  clear: both; }
